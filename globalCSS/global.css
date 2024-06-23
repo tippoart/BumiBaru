@@ -96,6 +96,21 @@
 
 }
 
+
+.section2 {
+  height: 110vh;
+  background-color: rgb(22, 21, 21);
+  color: white;
+  padding: 3rem;
+}
+
+.section2 img {
+  object-fit: cover;
+  width: 13rem;
+  border-radius: 10px;
+}
+
+
 /* verval 2 */
 
 .verval2 {

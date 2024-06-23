@@ -147,12 +147,13 @@ nav {
 }
 
 nav a{
-  padding: 0.8rem;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 nav  a:hover{
-  background-color: #3f5f37;
+  background-color: #505e4bd7;
   color: black;
+
 }
 
 nav .container-fluid {
@@ -164,7 +165,7 @@ nav .container-fluid .navbar-brand {
 }
 
 nav .container-fluid .contact-us {
-  background-color: rgb(130, 185, 68);
+  background-color: rgb(70, 106, 77);
   border-radius: 1rem;
   padding: 0.3rem;
   color: white;
