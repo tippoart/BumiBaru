@@ -1,0 +1,346 @@
+.berita {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.berita .row .card #foto-daur-1{
+  height: 12rem;
+  object-fit: cover;
+}
+
+
+
+
+/* verval 1 */
+
+.verval1 {
+  background-color: rgb(12, 12, 12);
+  padding: 10rem;
+  gap: 1rem;
+  color: white;
+  height: 120vh;
+  position: relative;
+  z-index: 0;
+}
+
+.verval1 .siku {
+  position: relative;
+  padding-left: 3.5rem;
+  padding-bottom: 4rem;
+}
+
+.verval1 .siku::before,
+.verval1 .siku::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.verval1 .siku::before {
+  width: 2px;
+  height: 5.5rem;
+  left: -5rem;
+  bottom: 0;
+}
+
+.verval1 .siku::after {
+  width: 5.5rem;
+  height: 2px;
+  left: -5rem;
+  bottom: 0;
+}
+
+.verval1 .siku-2 {
+  position: relative;
+}
+.verval1 .siku-2::before,
+.verval1 .siku-2::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.verval1 .siku-2::before {
+  width: 2px;
+  height: 5.5rem;
+  right: -6rem;
+  top: -4rem;
+}
+
+.verval1 .siku-2::after {
+  width: 5.5rem;
+  height: 2px;
+  right: -6rem;
+  top: -4rem;
+}
+
+.verval1 .container .who-we-are {
+  color: rgb(255, 181, 44);
+  font-size: 3rem;
+}
+
+.img1 {
+  width: 30rem;
+  height: 20rem;
+  /* overflow: hidden; */
+  background-image: url("../img/bumi-baru-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  margin-top: 3rem;
+
+}
+
+/* verval 2 */
+
+.verval2 {
+  background-image: url("../img/bumi-2/bg-3.jpg");
+  height: 130vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  overflow: hidden;
+}
+
+.verval2 .card-container {
+  left: 20rem;
+  height: 140vh;
+  position: relative;
+  overflow: hidden;
+  bottom: 14rem;
+}
+
+.verval2 img {
+  display: none;
+  width: 18rem;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 100%;
+
+}
+
+.verval2 #card-1 {
+  position: relative;
+  left: 1.5rem;
+  bottom: 2rem;
+  animation: slideInCard1 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+
+
+}
+
+@keyframes slideInCard1 {
+  0% {
+    transform: translateY(100%);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  
+  90% {
+    transform: translateY(4px);
+
+  }
+}
+
+.verval2 #card-2 {
+  transform: rotate(11deg);
+  position: relative;
+  bottom: 5rem;
+  animation: slideInCard2 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+@keyframes slideInCard2 {
+  0% {
+    transform: translateY(100%) rotate(11deg);
+  }
+  70% {
+    transform: translateY(0) rotate(11deg);
+  }
+
+  90% {
+    transform: translateY(4px) rotate(11deg);
+  }
+}
+.verval2 #card-3 {
+  transform: rotate(22deg);
+  position: relative;
+  right: 4rem;
+  top: 5.5rem;
+  animation: slideInCard3 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+
+@keyframes slideInCard3 {
+  0% {
+    transform: translateY(100%) rotate(22deg);
+  }
+  70% {
+    transform: translateY(0) rotate(22deg);
+  }
+
+  90% {
+    transform: translateY(4px) rotate(22deg);
+  }
+}
+
+.verval2 .card-container.centered {
+  animation: slide-in 1s ease-in-out forwards;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateY(-7%);
+  }
+
+  100% {
+    transform: translate(-20rem, 5rem) rotate(-11deg);
+  }
+}
+
+/* verval 3 */
+
+.verval3 {
+  height: 100vh;
+
+
+  background-color: rgb(7, 7, 7);
+  position: relative;
+
+}
+
+
+/* verval 4 */
+
+.verval4 {
+  background-image: url("../img/bg-daun-sec3.png");
+  background-repeat: no-repeat;
+  height: 120vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.verval4 i {
+  color: white;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.102);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 100%;
+}
+
+.verval4 .verval4-card {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/daun-jatuh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.verval4 .verval4-card .name-card {
+  background-color: rgba(255, 255, 255, 0.039);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 4rem;
+  border-radius: 2rem;
+  width: 30rem;
+  height: 16rem;
+  border: 2px solid rgba(255, 255, 255, 0.176);
+  z-index: 1;
+  transform: 3s;
+}
+
+.verval4 .verval4-card .name-card .testimoni {
+  color: rgb(245, 186, 24);
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  bottom: 7rem;
+  font-size: 1.5rem;
+}
+
+.verval4 .verval4-card .name-card img {
+  object-fit: cover;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid rgb(182, 180, 180);
+  position: relative;
+  bottom: 4rem;
+}
+.verval4 .verval4-card .name-card .user {
+  color: rgb(245, 186, 24);
+}
+
+/* verval 5 */
+
+.verval5 {
+  background-image: url("../img/bambu-bg-fix.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 130vh;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.verval5 .container .card-img {
+  border-radius: 20px;
+}
+
+.verval5 .container .card-img img {
+  object-fit: cover;
+  height: 10rem;
+  border-radius: 10px;
+}
+.verval5 #carouselExampleControls {
+  background-color: rgba(255, 255, 255, 0.165);
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1.5px solid rgba(255, 255, 255, 0.17);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.17);
+  border-right: 1.5px solid rgba(255, 255, 255, 0.17);
+  border-radius: 2rem;
+  height: 40rem;
+}
+.verval5 #carouselExampleControls .nice-to-now {
+  width: 40rem;
+}
+.verval5 #carouselExampleControls .nice-to-now h3 {
+  color: rgba(255, 208, 0, 0.869);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 10px;
+  width: 12rem;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  left: 1.5rem;
+  bottom: 3rem;
+}
+.verval5 #carouselExampleControls .nice-to-now a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  right: 1rem;
+  bottom: 2rem;
+}
+.verval5 .container .card-img #user {
+  background-color: rgba(128, 153, 164, 0.063);
+  border-radius: 7px;
+}
+
+.verval5 #carouselExampleControls .carousel-inner {
+  position: relative;
+  bottom: 2rem;
+}
+
+/*  */

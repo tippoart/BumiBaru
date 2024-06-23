@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BumiBaru</title>
+
+    <link rel="stylesheet" href="headerCSS/header.css" />
+    <link rel="stylesheet" href="globalCSS/produk_layanan.css" />
+    <link rel="stylesheet" href="footerCSS/footer.css" />
+
+     <link rel="icon" href="img/logo/logo-bumibaru3.png" type="image/png">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="parallax-header">
+      <nav
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-duration="1900"
+        data-aos-offset="0"
+        class="navbar navbar-expand-lg p-2"
+      >
+        <div class="container-fluid">
+          <div class="d-flex align-items-center gap-2">
+            <img src="img/logo/logo-bumibaru3.png" alt="" />
+            <a class="navbar-brand text-white" href="index.html">BUMIBARU</a>
+          </div>
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="bumiBaruPerusahaan.html"
+                >Perusahaan Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Porduk & Layanan</a>
+            </li>
+          </ul>
+
+          <a href="" class="contact-us">Masuk</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ullpage start -->
+
+    <a href="https://wa.me/1243827522" target="_blank">
+      <i id="wa" class="bx bxl-whatsapp" style="cursor: pointer"></i>
+    </a>
+
+    <!-- modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="jualModal"
+      tabindex="-1"
+      aria-labelledby="jualModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="jualModalLabel">Jual Sekarang</h5>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex gap-3 flex-column">
+              <div class="form-group">
+                <label for="itemName"> Kategori</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  disabled
+                  placeholder="Plastik"
+                />
+              </div>
+              <div class="form-group">
+                <label for="itemDescription">Whatsaap Aktif</label>
+                <input type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="itemDescription">Foto Sampah</label>
+                <input type="file" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="itemDescription">Tanggal Penjemputan Sampah</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="itemQuantity">Berat Sampah</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="itemQuantity"
+                  placeholder="Masukkan jumlah item"
+                />
+              </div>
+              <div class="form-group">
+                <label for="itemPrice">Harga Yang Kamu Peroleh</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="itemPrice"
+                  placeholder="Sub Total"
+                />
+                <span style="font-size: 12px" class="text-muted text-danger"
+                  >Untuk perkilo harga sampah tergantung dengan kategori sampah
+                  yang dijual</span
+                >
+              </div>
+              <div class="form-group">
+                <label for="itemPrice">Metode Penerimaan Bonus</label>
+                <select type="text" class="form-control" disabled>
+                  <option value="">
+                    Cash anda akan diantarkan oleh kurir kami
+                  </option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Batal
+            </button>
+            <button type="button" class="btn btn-success">Jual</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+
+    <section class="section1">
+      <h3 class="text-center">
+        Daur Ulang Sampah Dan Dapatkan Bonusnya Sekarang!
+      </h3>
+      <div class="container d-flex justify-content-center">
+        <div class="row mt-5 g-4">
+          <!-- Added g-4 for spacing between columns and rows -->
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                id="foto-daur-1"
+                src="img/foto-daurulang/pexels-anntarazevich-7772006.jpg"
+                class="card-img-top"
+                alt="..."
+                style="height: 12rem; object-fit: cover"
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Plastik</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                src="img/jenis-sampah/kertas.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Kertas</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                src="img/jenis-sampah/elektronik.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Elektronik</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                src="img/jenis-sampah/logam.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Logam</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                src="img/jenis-sampah/kaca.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Kaca</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow" style="width: 18rem">
+              <img
+                src="img/jenis-sampah/organik.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">Organik</p>
+                <a
+                  href="#"
+                  class="btn btn-dark"
+                  data-toggle="modal"
+                  data-target="#jualModal"
+                  >Jual Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <h2 class="text-center">Layanan Kami</h2>
+      <div class="d-flex flex-column gap-3">
+        <div class="d-flex gap-3 align-items-center">
+          <img
+            src="img/foto-layanan-kami/pexels-clam-lo-1782448-6850996.jpg"
+            alt=".."
+          />
+          <div>
+            <h5>Pengumpulan Sampah</h5>
+            <p>
+              Kami menawarkan layanan pengumpulan sampah untuk di daur ulang
+              secara terjadwal dan fleksibel. Tim kami siap mengambil sampah
+              dari lokasi Anda sesuai dengan jadwal yang telah disepakati. Kami
+              menyediakan kontainer dan kendaraan khusus untuk memastikan proses
+              pengumpulan berjalan lancar.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+          <img
+            src="img/foto-layanan-kami/pexels-julia-m-cameron-6995367.jpg"
+            alt=".."
+          />
+          <div>
+            <h5>Pemilahan dan Pengolahan</h5>
+            <p>
+              Sampah yang terkumpul akan dipilah secara teliti sesuai dengan
+              jenisnya. Kami memiliki sistem pengolahan modern yang memungkinkan
+              kami untuk mendaur ulang berbagai jenis material seperti kertas,
+              plastik, logam, dan kaca. Proses ini dilakukan dengan
+              memperhatikan standar keamanan lingkungan dan kesehatan.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex gap-3 align-items-center">
+          <img src="img/foto-layanan-kami/utama53.jpg" alt=".." />
+          <div>
+            <h5>Edukasi Masyarakat</h5>
+            <p>
+              Kami percaya bahwa pendidikan adalah kunci untuk mengubah perilaku
+              masyarakat terkait pengelolaan sampah. Oleh karena itu, kami
+              mengadakan program edukasi dan sosialisasi untuk sekolah,
+              perusahaan, dan masyarakat umum tentang pentingnya daur ulang dan
+              cara-cara praktis untuk mengurangi sampah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimoni section-->
+
+    <section class="testimoni">
+      <div class="container w-75">
+        <h2 class="text-center">Kata Mereka</h2>
+        <div id="carouselTestimoni" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner p-3 text-center">
+            <div class="carousel-item active">
+              <div class="testimonial-item p-3">
+                <i class="bx bxs-user-circle"></i>
+                <p>
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer posuere erat a ante."
+                </p>
+                <h4>John Doe</h4>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item p-3">
+                <i class="bx bxs-user-circle"></i>
+                <p>
+                  "Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam."
+                </p>
+                <h4>Jane Smith</h4>
+               
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-item p-3">
+                <i class="bx bxs-user-circle"></i>
+                <p>
+                  "Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam."
+                </p>
+                <h4>Tippo</h4>
+               
+              </div>
+            </div>
+            <!-- Tambahkan lebih banyak carousel-item sesuai kebutuhan -->
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselTestimoni"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselTestimoni"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <form class="mt-5">
+          <h5 class="text-center">Yuk Ikut Komentar</h5>
+        <div class="mb-3">
+       
+          <input
+          placeholder="Nama"
+            type="text"
+           
+          
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            
+            placeholder="Komentar Anda.."
+            name=""
+            id=""
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Kirim</button>
+      </form>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="text-center">FAQ</h2>
+      <div class="container my-5">
+       
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0 ">
+                <button
+                  class="btn d-flex align-items-center justify-content-between w-100 "
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Apa itu BumiBaru?
+                  <i class='bx bxs-chevron-down'></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                BumiBaru adalah perusahaan yang berfokus pada daur ulang sampah
+                untuk menciptakan lingkungan yang lebih bersih dan hijau. Kami
+                menawarkan berbagai layanan termasuk pengumpulan, pemilahan,
+                pengolahan sampah, dan edukasi masyarakat tentang pentingnya
+                daur ulang. Selain itu, kami juga memberikan bonus kepada masyarakat bila menjual sampah di BumiBaru sesuai dengan ketegori sampah yang tersedia.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn  collapsed d-flex align-items-center justify-content-between w-100 "
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Bagaimana cara menggunakan layanan pengumpulan sampah BumiBaru?
+                    <i class='bx bxs-chevron-down'></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Untuk menggunakan layanan pengumpulan sampah kami, Anda bisa
+                masuk pada halaman produk&layanan pada halaman pertama tersedia kategori sampah yang ingin dijual. Anda bisa menyalurkan sampah tersebut pada fitur tersebut. Anda juga bisa Menghubungi kami melalui telepon, email atau Wa yang tersedia untuk menjadwalkan
+                pengambilan sampah. Kami akan menyediakan kontainer dan kendaran khusus kemudian mengambil sampah dari lokasi Anda sesuai jadwal yang telah
+                disepakati.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn collapsed d-flex align-items-center justify-content-between w-100 "
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Apa saja jenis sampah yang bisa didaur ulang oleh BumiBaru?
+                   <i class='bx bxs-chevron-down'></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                Kami menerima berbagai jenis sampah untuk didaur ulang, termasuk
+                kertas, plastik, logam, kaca, dan limbah elektronik dan sampah Organik. Setiap
+                jenis sampah diproses dengan metode yang berbeda untuk
+                memastikan hasil daur ulang yang maksimal dan aman bagi
+                lingkungan.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button
+                  class="btn  collapsed d-flex align-items-center justify-content-between w-100"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Bagaimana BumiBaru mengedukasi masyarakat tentang pentingnya
+                  daur ulang?
+                   <i class='bx bxs-chevron-down'></i>
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body">
+                BumiBaru mengadakan berbagai program edukasi dan sosialisasi
+                yang ditujukan untuk sekolah, perusahaan, dan masyarakat umum.
+                Program ini mencakup seminar, workshop, dan kampanye publik yang
+                bertujuan meningkatkan kesadaran tentang pentingnya daur ulang
+                dan cara mengelola sampah dengan benar.
+              </div>
+            </div>
+          </div>
+          <!-- Tambahkan lebih banyak FAQ sesuai kebutuhan -->
+        </div>
+      </div>
+    </section>
+
+    <footer id="section6" class="verval6 section">
+      <div class="footer d-flex justify-content-between gap-5">
+        <section class="footer-logo d-flex flex-column gap-2">
+          <div class="verval-logo-footer">
+            <h1>BumiBaru</h1>
+          </div>
+          <p>
+            Kami berkomitmen Untuk Menjaga Lingkungan <br />
+            Yang Sehat, Bersih Dan Damai. Bersama Masyarakat Ayok Ciptakan
+            Lingkungan Yang Kita Impikan<br />
+          </p>
+          <div class="logo d-flex gap-3">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram-alt"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-youtube"></i>
+          </div>
+        </section>
+
+        <section>
+          <h5>Kontak Kami</h5>
+          <br />
+
+          <div class="d-flex align-items-center gap-1">
+            <i
+              style="position: relative; bottom: 5px; font-size: 17px"
+              class="bx bx-envelope"
+            ></i>
+            <p>BumiBaru@gmail.com</p>
+          </div>
+          <div class="d-flex align-items-center gap-1">
+            <i
+              style="position: relative; bottom: 5px; font-size: 17px"
+              class="bx bx-phone"
+            ></i>
+            <p>(+62)81243827522</p>
+          </div>
+        </section>
+
+        <section>
+          <h5>Bantuan</h5>
+          <br />
+          <p>FAQ</p>
+        </section>
+
+        <section>
+          <h5>Lokasi</h5>
+          <br />
+
+          <p>
+            Gg. Rukun no.51, RT 3 RW 54<br />
+            Jl. K.H. Hasyim, Krapyak,<br />
+            Wedomartani, Sleman, Yogyakarta <br />
+            Indonesia
+          </p>
+        </section>
+      </div>
+      <br />
+
+      <hr class="garis" />
+
+      <div
+        style="position: relative; top: 1rem"
+        class="d-flex justify-content-between"
+      >
+        <p>Copyright &copy; 2024 BumiBaru</p>
+
+        <div class="footer-end">
+          <p>
+            All Rights Reserved |<span class="terms">
+              Terms And Conditions </span
+            >| <span class="pripacy">Pripacy Policy</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.section1 {
+  background-color: rgba(25, 25, 24, 0.968);
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  color: white;
+}
+.section1 img {
+  width: 7rem;
+  object-fit: contain;
+}
+
+.section2 {
+
+  padding: 3rem;
+}
+
+.section2 img {
+
+  width: 6rem;
+  object-fit: cover;
+  border-radius: 100%;
+
+}
+
+.section2 .admin {
+  backdrop-filter: blur(20px);
+  background-color: rgba(4, 4, 4, 0.169);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.section3 {
+  height: 100vh;
+  padding: 5rem;
+  background-color: rgba(39, 52, 43, 0.819);
+}
+
+.section3 form {
+  color: white;
+  padding: 3rem;
+  backdrop-filter: blur(20px);
+  background-color: rgba(4, 4, 4, 0.169);
+  border-radius: 10px;
+}

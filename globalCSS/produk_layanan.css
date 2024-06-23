@@ -1,0 +1,92 @@
+.section1 {
+  padding: 2rem;
+}
+
+.section1 h3 {
+  margin-top: 4rem;
+}
+
+.section2 {
+  height: 110vh;
+  background-color: rgb(22, 21, 21);
+  color: white;
+  padding: 3rem;
+}
+
+.section2 img {
+  object-fit: cover;
+  width: 13rem;
+  border-radius: 10px;
+}
+
+.testimoni {
+  background-image: url("../img/pexels-skylar-kang-6044820.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+color: white;
+  padding: 4rem;
+}
+
+.testimoni form input{
+  background-color: rgba(255, 255, 255, 0.169);
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem;
+}
+.testimoni form textarea::placeholder{
+  color: rgb(221, 218, 218);
+}
+.testimoni form textarea{
+  background-color: rgba(255, 255, 255, 0.169);
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 1rem;
+}
+.testimoni form input::placeholder{
+  color: rgb(221, 218, 218);
+}
+
+
+.testimoni h2 {
+  color: rgb(255, 179, 72);
+}
+
+.testimoni .container .carousel {
+  color: white;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.169);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.testimoni .container .carousel .carousel-inner .carousel-item {
+  height: 200px;
+}
+.testimoni .container .carousel .carousel-inner .carousel-item i {
+  font-size: 3rem;
+}
+
+.faq {
+  background-color: rgb(22, 21, 21);
+  height: 100vh;
+  color: white;
+  padding: 3rem;
+}
+.faq .container #accordion .card-header h5 button {
+  color: white;
+
+  border: none;
+}
+.faq .container #accordion .card {
+  backdrop-filter: blur(10px);
+  color: rgb(187, 222, 178);
+  background-color: rgba(255, 255, 255, 0.169);
+}
