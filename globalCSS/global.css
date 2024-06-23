@@ -88,7 +88,7 @@
   width: 30rem;
   height: 20rem;
   /* overflow: hidden; */
-  background-image: url("../img/bumi-baru-bg.png");
+  background-image: url("../img/bg-bumi-baru.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: contain;
@@ -99,7 +99,7 @@
 /* verval 2 */
 
 .verval2 {
-  background-image: url("../img/bumi-2/bg-3.jpg");
+  background-image: url("../img/bumi-2/bg-3.webp");
   height: 130vh;
   background-position: center;
   background-size: cover;
